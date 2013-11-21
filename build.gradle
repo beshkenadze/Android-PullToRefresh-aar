@@ -40,7 +40,7 @@ android.libraryVariants
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: "file:///Users/akira/.m2/repository")
+            repository(url: "file://"+System.getProperty("user.home")+"/.m2/repository")
         }
     }
 }
